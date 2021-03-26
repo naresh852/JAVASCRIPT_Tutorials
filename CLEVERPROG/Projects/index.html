@@ -1,0 +1,96 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/style.css">
+    
+</head>
+<body>
+    <div class="container-1">
+    <p><b>Challenge 1:Your age in days</b></p>
+    <div class="flex-box-container-1">
+    <div><button class="btn btn-primary" onclick="ageindays()">Click me</button></div>
+    <div><button class="btn btn-danger"onclick="reset()">reset</button></div>
+</div>
+<div class="flex-box-container-1">
+    <div id="flex-box-result"></div>
+</div>
+</div>
+<div class="container-2">
+<h2>challenge 2:cat generator</h2>
+<button class="btn btn-success"onclick="generate()">generator cat</button>
+<div class="flex-box-container-2"id="flex-cat-gen">
+    <!-- <img src="https://i.pinimg.com/originals/c3/2b/fa/c32bfa16bcf864e478d3ddfe32440268.gif" alt="">
+    <img src="https://i.pinimg.com/originals/c3/2b/fa/c32bfa16bcf864e478d3ddfe32440268.gif" alt="">
+    <img src="https://i.pinimg.com/originals/c3/2b/fa/c32bfa16bcf864e478d3ddfe32440268.gif" alt="">
+    <img src="https://i.pinimg.com/originals/c3/2b/fa/c32bfa16bcf864e478d3ddfe32440268.gif" alt="">
+    <img src="https://i.pinimg.com/originals/c3/2b/fa/c32bfa16bcf864e478d3ddfe32440268.gif" alt="">
+    <img src="https://i.pinimg.com/originals/c3/2b/fa/c32bfa16bcf864e478d3ddfe32440268.gif" alt="">
+    <img src="https://i.pinimg.com/originals/c3/2b/fa/c32bfa16bcf864e478d3ddfe32440268.gif" alt="">
+    <img src="https://i.pinimg.com/originals/c3/2b/fa/c32bfa16bcf864e478d3ddfe32440268.gif" alt=""> -->
+</div>
+</div>
+<div class="container-3">
+    <h1>challenge 3:rock,paper,scissor</h1>
+    <div class="flex-box-rps"id="flex-box-rps-div">
+        <img id="rock" src="https://image.shutterstock.com/image-photo/krishnas-butterball-giant-natural-balancing-260nw-599803469.jpg" height=150 width=150 onclick="rpsgame(this)"alt="">
+        <img id="paper" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQVA6LNWZsCSrum2ItlbE2WHc2o70TWqmym2w&usqp=CAU" height=150 width=150 onclick="rpsgame(this)"alt="">
+        <img id="scissor"src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTfoWh_rlm7sqkDh5bW5kqqqWca66jYpxbU_w&usqp=CAU"height=150 width=150 onclick="rpsgame(this)">
+
+    </div>
+</div>
+<div class="container-4">
+    <h2>Challenge 4 : Change color of all buttons</h2>
+    <div class="flex-box-color-picker">
+    <form action="">
+        <select name="backdrop" id="background" onchange="changecolorall(this)">
+            <option value="random">random</option>
+            <option value="green">green</option>
+            <option value="red">red</option>
+            <option value="reset">reset</option>
+        </select>
+
+    </form>
+
+    <button class="btn btn-primary">facebook</button>
+    <button class="btn btn-danger">youtube</button>
+    <button class="btn btn-warning">snapchat</button>
+    <button class="btn btn-success">spotify</button>
+</div>
+</div>
+<div class="container-5">
+    <h2>challenge:5 Blackjack</h2>
+    
+    <h3><span id="blackjack-result">Let's Play</span></h3>
+    <div class="flex-blackjack-row-1">
+        <div id="userplays"><h2>you:<span id="userresult">0</span></h2></div>
+        <div id="botplays"><h2>bot:<span id="botresult">0</span></h2></div>
+    </div>
+    <div class="flex-blackjack-row-2">
+        <div>
+        <button  class="btn-lg btn-primary mr-2" id="hitbutton">hit</button>
+        <button id="standbutton" class="btn-lg btn-warning mr-2">stand</button>
+        <button id="dealbutton" class="btn-lg btn-success mr-2">deal</button>
+        </div>
+    </div>
+    <div class="flex-blackjack-row-3">
+        <table>
+            <tr>
+                <th>wins</th>
+                <th>losses</th>
+                <th>draws</th>
+            </tr>
+            <tr>
+                <td><span id="wins">0</span></td>
+                <td><span id="losses">0</span></td>
+                <td><span id="draws">0</span></td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+</body>
+<script src="static/js/script.js"></script> 
+</html>
