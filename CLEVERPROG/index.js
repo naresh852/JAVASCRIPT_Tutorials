@@ -12,7 +12,7 @@
 // }
 
 // let name= prompt('what is your name?');
-// greeting(name);
+// greeting(name); 
 
 
 // function summ ( num1, num2){
